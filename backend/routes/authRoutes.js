@@ -3,10 +3,21 @@ import { Router } from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import Admin from "../models/Admin.js";
+import rateLimit from "express-rate-limit";
 
 const router = Router();
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    message: "Too many login attempts. Please try again later.",
+  },
+});
 
-router.post("/login", async (req, res) => {
+
+router.post("/login",loginLimiter, async (req, res) => {
   try {
     const { username, password } = req.body;
 

@@ -1,8 +1,30 @@
-
 import { Router } from "express";
 import mongoose from "mongoose";
 import Project from "../models/Project.js";
 import authMiddleware from "../middleware/authMiddleware.js";
+
+function isValidOptionalUrl(value) {
+  if (value === undefined || value === null || value === "") {
+    return true;
+  }
+
+  if (typeof value !== "string" || value.length > 2048) {
+    return false;
+  }
+
+  try {
+    const url = new URL(value);
+
+    return (
+      ["http:", "https:"].includes(url.protocol) &&
+      Boolean(url.hostname) &&
+      !url.username &&
+      !url.password
+    );
+  } catch {
+    return false;
+  }
+}
 
 const router = Router();
 
@@ -42,10 +64,13 @@ router.post("/", authMiddleware, async (req, res) => {
               item.trim().length <= 50
           ))) ||
       (github !== undefined && typeof github !== "string") ||
-      (demo !== undefined && typeof demo !== "string")
+      (demo !== undefined && typeof demo !== "string") ||
+      !isValidOptionalUrl(github) ||
+      !isValidOptionalUrl(demo)
     ) {
       return res.status(400).json({
-        message: "Please provide valid project details.",
+        message:
+          "Please provide valid project details and HTTP or HTTPS links.",
       });
     }
 
@@ -90,10 +115,13 @@ router.put("/:id", authMiddleware, async (req, res) => {
               item.trim().length <= 50
           ))) ||
       (github !== undefined && typeof github !== "string") ||
-      (demo !== undefined && typeof demo !== "string")
+      (demo !== undefined && typeof demo !== "string") ||
+      !isValidOptionalUrl(github) ||
+      !isValidOptionalUrl(demo)
     ) {
       return res.status(400).json({
-        message: "Please provide valid project details.",
+        message:
+          "Please provide valid project details and HTTP or HTTPS links.",
       });
     }
 
