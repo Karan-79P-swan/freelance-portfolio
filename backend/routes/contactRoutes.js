@@ -95,6 +95,129 @@ router.get("/", authMiddleware, async (req, res) => {
   }
 });
 
+/* Admin only: update CRM details for a contact message */
+router.patch("/:id", authMiddleware, async (req, res) => {
+  try {
+    if (!mongoose.isValidObjectId(req.params.id)) {
+      return res.status(400).json({
+        message: "Invalid message ID.",
+      });
+    }
+
+    const allowedFields = [
+      "isRead",
+      "status",
+      "notes",
+      "budget",
+      "followUpDate",
+    ];
+
+    const updates = {};
+
+    for (const field of allowedFields) {
+      if (Object.prototype.hasOwnProperty.call(req.body, field)) {
+        updates[field] = req.body[field];
+      }
+    }
+
+    if (Object.keys(updates).length === 0) {
+      return res.status(400).json({
+        message: "No valid CRM fields provided.",
+      });
+    }
+
+    if (
+      "isRead" in updates &&
+      typeof updates.isRead !== "boolean"
+    ) {
+      return res.status(400).json({
+        message: "isRead must be true or false.",
+      });
+    }
+
+    if (
+      "status" in updates &&
+      !["new", "in-progress", "completed"].includes(
+        updates.status
+      )
+    ) {
+      return res.status(400).json({
+        message: "Invalid message status.",
+      });
+    }
+
+    if (
+      "notes" in updates &&
+      (typeof updates.notes !== "string" ||
+        updates.notes.length > 2000)
+    ) {
+      return res.status(400).json({
+        message: "Notes must be a string of at most 2000 characters.",
+      });
+    }
+
+    if ("notes" in updates) {
+      updates.notes = updates.notes.trim();
+    }
+
+    if ("budget" in updates) {
+      const budget = updates.budget;
+
+      if (
+        budget !== null &&
+        (typeof budget !== "number" ||
+          !Number.isFinite(budget) ||
+          budget < 0 ||
+          budget > 100000000)
+      ) {
+        return res.status(400).json({
+          message: "Budget must be between 0 and 100000000.",
+        });
+      }
+    }
+
+    if ("followUpDate" in updates) {
+      if (updates.followUpDate === null || updates.followUpDate === "") {
+        updates.followUpDate = null;
+      } else {
+        const date = new Date(updates.followUpDate);
+
+        if (Number.isNaN(date.getTime())) {
+          return res.status(400).json({
+            message: "Invalid follow-up date.",
+          });
+        }
+
+        updates.followUpDate = date;
+      }
+    }
+
+    const updatedMessage = await Message.findByIdAndUpdate(
+      req.params.id,
+      { $set: updates },
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedMessage) {
+      return res.status(404).json({
+        message: "Contact message not found.",
+      });
+    }
+
+    res.json({
+      message: "Contact message updated successfully.",
+      data: updatedMessage,
+    });
+  } catch (error) {
+    console.error("Update message error:", error.message);
+
+    res.status(500).json({
+      message: "Unable to update contact message.",
+    });
+  }
+});
+
+
 // Admin only: delete a contact message
 router.delete("/:id", authMiddleware, async (req, res) => {
   try {

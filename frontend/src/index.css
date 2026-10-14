@@ -48,3 +48,17 @@ button {
   background: #8b5cf6;
   color: white;
 }
+
+/* Hide the scrollbar but keep scrolling enabled */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+  width: 0;
+  height: 0;
+}
+
