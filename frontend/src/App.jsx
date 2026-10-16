@@ -22,7 +22,8 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+
+const API = import.meta.env.VITE_API_URL || "https://freelance-portfolio-5he9.onrender.com/api";
 
 const initialProjects = [
 
