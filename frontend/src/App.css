@@ -18,8 +18,6 @@
 
 }
 
-
-
 .navbar {
 
   height: 76px;
@@ -46,8 +44,6 @@
 
 }
 
-
-
 .logo {
 
   display: inline-flex;
@@ -61,8 +57,6 @@
   color: var(--text);
 
 }
-
-
 
 .logo img {
 
@@ -78,8 +72,6 @@
 
 }
 
-
-
 .logo:hover img {
 
   transform: translateY(-2px) scale(1.04);
@@ -87,8 +79,6 @@
   filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.45));
 
 }
-
-
 
 .logo-text {
 
@@ -100,8 +90,6 @@
 
 }
 
-
-
 .logo-text strong {
 
   font-size: 16px;
@@ -111,8 +99,6 @@
   letter-spacing: 0.2px;
 
 }
-
-
 
 .logo-text small {
 
@@ -124,8 +110,6 @@
 
 }
 
-
-
 .footer-logo img {
 
   width: 42px;
@@ -133,8 +117,6 @@
   height: 42px;
 
 }
-
-
 
 .nav-links {
 
@@ -150,8 +132,6 @@
 
 }
 
-
-
 .nav-links a:hover,
 
 .social-links a:hover,
@@ -162,8 +142,6 @@
 
 }
 
-
-
 .nav-admin {
 
   border: 1px solid var(--border);
@@ -173,8 +151,6 @@
   padding: 10px 15px;
 
 }
-
-
 
 .menu-toggle {
 
@@ -190,8 +166,6 @@
 
 }
 
-
-
 .section {
 
   padding: 100px 9%;
@@ -199,8 +173,6 @@
   scroll-margin-top: 76px;
 
 }
-
-
 
 .hero {
 
@@ -217,8 +189,6 @@
   overflow: hidden;
 
 }
-
-
 
 .availability {
 
@@ -244,8 +214,6 @@
 
 }
 
-
-
 .availability span {
 
   height: 7px;
@@ -259,8 +227,6 @@
   box-shadow: 0 0 12px #4ade80;
 
 }
-
-
 
 .eyebrow {
 
@@ -276,15 +242,11 @@
 
 }
 
-
-
 .hero .eyebrow {
 
   margin-top: 30px;
 
 }
-
-
 
 .hero h1 {
 
@@ -298,8 +260,6 @@
 
 }
 
-
-
 .hero h2 {
 
   font-size: 24px;
@@ -307,8 +267,6 @@
   margin-top: 20px;
 
 }
-
-
 
 .hero-description,
 
@@ -324,8 +282,6 @@
 
 }
 
-
-
 .hero-actions {
 
   display: flex;
@@ -337,8 +293,6 @@
   margin-top: 28px;
 
 }
-
-
 
 .btn {
 
@@ -362,15 +316,11 @@
 
 }
 
-
-
 .btn:hover {
 
   transform: translateY(-3px);
 
 }
-
-
 
 .btn:disabled {
 
@@ -382,8 +332,6 @@
 
 }
 
-
-
 .btn-primary {
 
   background: linear-gradient(120deg, #7c3aed, #6366f1);
@@ -394,15 +342,11 @@
 
 }
 
-
-
 .btn-primary:hover {
 
   box-shadow: 0 10px 32px rgba(124, 58, 237, .4);
 
 }
-
-
 
 .btn-outline {
 
@@ -413,8 +357,6 @@
   background: rgba(255, 255, 255, .02);
 
 }
-
-
 
 .social-links {
 
@@ -430,8 +372,6 @@
 
 }
 
-
-
 .hero-art {
 
   position: relative;
@@ -443,8 +383,6 @@
   min-height: 390px;
 
 }
-
-
 
 .orbit {
 
@@ -460,8 +398,6 @@
 
 }
 
-
-
 .orbit-two {
 
   width: 265px;
@@ -471,8 +407,6 @@
   border-color: rgba(99, 102, 241, .25);
 
 }
-
-
 
 .code-card {
 
@@ -496,8 +430,6 @@
 
 }
 
-
-
 .code-dots {
 
   color: #fb7185;
@@ -508,23 +440,17 @@
 
 }
 
-
-
 .code-dots span {
 
   color: #fbbf24;
 
 }
 
-
-
 .code-dots b {
 
   color: #4ade80;
 
 }
-
-
 
 .code-card p {
 
@@ -540,15 +466,11 @@
 
 }
 
-
-
 .code-card p span {
 
   color: #f472b6;
 
 }
-
-
 
 .code-card em {
 
@@ -558,15 +480,11 @@
 
 }
 
-
-
 .code-card .indent {
 
   padding-left: 20px;
 
 }
-
-
 
 .code-card .code-bottom {
 
@@ -579,8 +497,6 @@
   color: #93c5fd;
 
 }
-
-
 
 .floating-tag {
 
@@ -606,8 +522,6 @@
 
 }
 
-
-
 .about-section {
 
   background: linear-gradient(180deg, #0b0e1d, #0e1223);
@@ -615,8 +529,6 @@
   border-block: 1px solid rgba(255, 255, 255, .04);
 
 }
-
-
 
 .section-title {
 
@@ -629,8 +541,6 @@
   margin: 0 0 20px;
 
 }
-
-
 
 .skills,
 
@@ -645,8 +555,6 @@
   margin-top: 25px;
 
 }
-
-
 
 .skills span,
 
@@ -666,8 +574,6 @@
 
 }
 
-
-
 .service-grid,
 
 .project-grid {
@@ -681,8 +587,6 @@
   margin-top: 35px;
 
 }
-
-
 
 .service-card,
 
@@ -702,15 +606,11 @@
 
 }
 
-
-
 .service-card {
 
   padding: 28px;
 
 }
-
-
 
 .service-card:hover,
 
@@ -724,8 +624,6 @@
 
 }
 
-
-
 .service-icon {
 
   font-size: 34px;
@@ -734,8 +632,6 @@
 
 }
 
-
-
 .service-card h3,
 
 .project-content h3 {
@@ -743,8 +639,6 @@
   font-size: 18px;
 
 }
-
-
 
 .service-card p,
 
@@ -761,8 +655,6 @@
   line-height: 1.8;
 
 }
-
-
 
 .project-visual {
 
@@ -786,15 +678,11 @@
 
 }
 
-
-
 .project-content {
 
   padding: 23px;
 
 }
-
-
 
 .project-tags {
 
@@ -802,15 +690,11 @@
 
 }
 
-
-
 .project-tags span {
 
   padding: 6px 9px;
 
 }
-
-
 
 .project-links {
 
@@ -828,8 +712,6 @@
 
 }
 
-
-
 .contact-section {
 
   display: grid;
@@ -842,8 +724,6 @@
 
 }
 
-
-
 .contact-form {
 
   display: flex;
@@ -854,8 +734,6 @@
 
 }
 
-
-
 .form-row {
 
   display: grid;
@@ -865,8 +743,6 @@
   gap: 15px;
 
 }
-
-
 
 .contact-form input,
 
@@ -890,8 +766,6 @@
 
 }
 
-
-
 .contact-form input:focus,
 
 .contact-form textarea:focus {
@@ -902,15 +776,11 @@
 
 }
 
-
-
 .contact-form textarea {
 
   resize: vertical;
 
 }
-
-
 
 .notice {
 
@@ -922,15 +792,11 @@
 
 }
 
-
-
 .notice.error {
 
   color: #fca5a5;
 
 }
-
-
 
 .footer {
 
@@ -952,15 +818,11 @@
 
 }
 
-
-
 .footer p {
 
   text-align: center;
 
 }
-
-
 
 .admin-login {
 
@@ -973,8 +835,6 @@
   padding: 35px 20px;
 
 }
-
-
 
 .login-card {
 
@@ -990,15 +850,11 @@
 
 }
 
-
-
 .login-card h1 {
 
   margin-bottom: 8px;
 
 }
-
-
 
 .login-card>a {
 
@@ -1010,15 +866,11 @@
 
 }
 
-
-
 .admin-page {
 
   min-height: 100vh;
 
 }
-
-
 
 .admin-heading,
 
@@ -1034,8 +886,6 @@
 
 }
 
-
-
 .admin-panel {
 
   padding: 25px;
@@ -1044,15 +894,11 @@
 
 }
 
-
-
 .admin-panel h2 {
 
   margin-top: 0;
 
 }
-
-
 
 .admin-item {
 
@@ -1062,23 +908,17 @@
 
 }
 
-
-
 .admin-item:last-child {
 
   border-bottom: 0;
 
 }
 
-
-
 .admin-item p {
 
   margin-bottom: 0;
 
 }
-
-
 
 .admin-actions {
 
@@ -1089,8 +929,6 @@
   gap: 12px;
 
 }
-
-
 
 .admin-actions button,
 
@@ -1108,8 +946,6 @@
 
 }
 
-
-
 .danger-button {
 
   color: #fca5a5;
@@ -1117,8 +953,6 @@
   border-color: rgba(248, 113, 113, .25);
 
 }
-
-
 
 .message-card {
 
@@ -1130,23 +964,17 @@
 
 }
 
-
-
 .message-card h3 {
 
   margin: 0;
 
 }
 
-
-
 .message-card small {
 
   color: var(--muted);
 
 }
-
-
 
 .admin-page>a {
 
@@ -1158,8 +986,6 @@
 
 }
 
-
-
 @media (max-width: 900px) {
 
   .section {
@@ -1167,8 +993,6 @@
     padding: 75px 6%;
 
   }
-
-
 
   .hero {
 
@@ -1178,15 +1002,11 @@
 
   }
 
-
-
   .hero-art {
 
     min-height: 350px;
 
   }
-
-
 
   .service-grid,
 
@@ -1195,8 +1015,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
   }
-
-
 
   .contact-section {
 
@@ -1208,8 +1026,6 @@
 
 }
 
-
-
 @media (max-width: 600px) {
 
   .navbar {
@@ -1218,15 +1034,11 @@
 
   }
 
-
-
   .menu-toggle {
 
     display: block;
 
   }
-
-
 
   .nav-links {
 
@@ -1254,15 +1066,11 @@
 
   }
 
-
-
   .nav-links.nav-open {
 
     display: flex;
 
   }
-
-
 
   .section {
 
@@ -1270,23 +1078,17 @@
 
   }
 
-
-
   .hero h1 {
 
     letter-spacing: -2px;
 
   }
 
-
-
   .hero-art {
 
     min-height: 300px;
 
   }
-
-
 
   .orbit {
 
@@ -1296,8 +1098,6 @@
 
   }
 
-
-
   .orbit-two {
 
     width: 220px;
@@ -1306,15 +1106,11 @@
 
   }
 
-
-
   .code-card {
 
     padding: 20px;
 
   }
-
-
 
   .service-grid,
 
@@ -1326,8 +1122,6 @@
 
   }
 
-
-
   .footer {
 
     flex-direction: column;
@@ -1336,15 +1130,11 @@
 
   }
 
-
-
   .admin-panel {
 
     padding: 18px;
 
   }
-
-
 
   .admin-item,
 
@@ -1354,15 +1144,11 @@
 
   }
 
-
-
   .admin-item {
 
     flex-direction: column;
 
   }
-
-
 
   .admin-heading {
 
@@ -1372,15 +1158,11 @@
 
 }
 
+/* ========================================
 
+   PORTFOLIO UI IMPROVEMENTS
 
-*/* ========================================*
-
-*&#xA0;  PORTFOLIO UI IMPROVEMENTS*
-
-*======================================== */*
-
-
+======================================== */
 
 :root {
 
@@ -1398,9 +1180,7 @@
 
 }
 
-
-
-*/* Smooth scrolling */*
+/* Smooth scrolling */
 
 html {
 
@@ -1410,9 +1190,7 @@ html {
 
 }
 
-
-
-*/* Better text selection */*
+/* Better text selection */
 
 ::selection {
 
@@ -1422,9 +1200,7 @@ html {
 
 }
 
-
-
-*/* Consistent section spacing */*
+/* Consistent section spacing */
 
 .section {
 
@@ -1432,9 +1208,7 @@ html {
 
 }
 
-
-
-*/* Better section headings */*
+/* Better section headings */
 
 .section-title {
 
@@ -1443,8 +1217,6 @@ html {
   line-height: 1.15;
 
 }
-
-
 
 .section-title span {
 
@@ -1458,9 +1230,7 @@ html {
 
 }
 
-
-
-*/* Hero heading enhancement */*
+/* Hero heading enhancement */
 
 .hero h1 {
 
@@ -1469,8 +1239,6 @@ html {
   line-height: 1.05;
 
 }
-
-
 
 .hero h1 span {
 
@@ -1484,8 +1252,6 @@ html {
 
 }
 
-
-
 .hero-description,
 
 .section-description {
@@ -1496,9 +1262,7 @@ html {
 
 }
 
-
-
-*/* Buttons: smoother hover and focus */*
+/* Buttons: smoother hover and focus */
 
 .btn {
 
@@ -1512,23 +1276,17 @@ html {
 
 }
 
-
-
 .btn:hover:not(:disabled) {
 
   transform: translateY(-3px);
 
 }
 
-
-
 .btn-primary:hover:not(:disabled) {
 
   box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
 
 }
-
-
 
 .btn:focus-visible,
 
@@ -1546,9 +1304,7 @@ textarea:focus-visible {
 
 }
 
-
-
-*/* Project cards */*
+/* Project cards */
 
 .project-card {
 
@@ -1570,8 +1326,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-card:hover {
 
   transform: translateY(-7px);
@@ -1581,8 +1335,6 @@ textarea:focus-visible {
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
 
 }
-
-
 
 .project-visual {
 
@@ -1614,15 +1366,11 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-content {
 
   padding: 24px;
 
 }
-
-
 
 .project-content h3 {
 
@@ -1632,8 +1380,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-content p {
 
   color: var(--text-secondary);
@@ -1641,8 +1387,6 @@ textarea:focus-visible {
   line-height: 1.75;
 
 }
-
-
 
 .project-tags {
 
@@ -1655,8 +1399,6 @@ textarea:focus-visible {
   margin-top: 18px;
 
 }
-
-
 
 .project-tags span,
 
@@ -1682,8 +1424,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-tags span:hover,
 
 .skills span:hover {
@@ -1693,8 +1433,6 @@ textarea:focus-visible {
   border-color: rgba(167, 139, 250, 0.45);
 
 }
-
-
 
 .project-links {
 
@@ -1708,8 +1446,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-links a,
 
 .social-links a {
@@ -1722,8 +1458,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .project-links a:hover,
 
 .social-links a:hover {
@@ -1732,9 +1466,7 @@ textarea:focus-visible {
 
 }
 
-
-
-*/* Empty projects message */*
+/* Empty projects message */
 
 .empty-projects {
 
@@ -1760,8 +1492,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .empty-projects h3 {
 
   color: #c4b5fd;
@@ -1769,8 +1499,6 @@ textarea:focus-visible {
   margin-bottom: 12px;
 
 }
-
-
 
 .empty-projects p {
 
@@ -1780,9 +1508,7 @@ textarea:focus-visible {
 
 }
 
-
-
-*/* Service cards */*
+/* Service cards */
 
 .service-card {
 
@@ -1796,8 +1522,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .service-card:hover {
 
   transform: translateY(-5px);
@@ -1808,9 +1532,7 @@ textarea:focus-visible {
 
 }
 
-
-
-*/* Contact form fields */*
+/* Contact form fields */
 
 .contact-form input,
 
@@ -1826,8 +1548,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .contact-form input:focus,
 
 .contact-form textarea:focus {
@@ -1838,8 +1558,6 @@ textarea:focus-visible {
 
 }
 
-
-
 .contact-form textarea {
 
   resize: vertical;
@@ -1847,8 +1565,6 @@ textarea:focus-visible {
   min-height: 140px;
 
 }
-
-
 
 .contact-form button:disabled {
 
@@ -1858,9 +1574,6 @@ textarea:focus-visible {
 
 }
 
-
-
-
 @media (prefers-reduced-motion: reduce) {
 
   html {
@@ -1868,8 +1581,6 @@ textarea:focus-visible {
     scroll-behavior: auto;
 
   }
-
-
 
   *,
 
@@ -1889,12 +1600,7 @@ textarea:focus-visible {
 
 }
 
-
-
-
 @media (max-width: 600px) {
-
-
 
   .project-card:hover,
 
@@ -1906,15 +1612,11 @@ textarea:focus-visible {
 
   }
 
-
-
   .project-content {
 
     padding: 20px;
 
   }
-
-
 
   .empty-projects {
 
@@ -6066,7 +5768,6 @@ textarea:focus-visible {
   }
 }
 
-
 /* ========================================
    CREATIVE PURPLE PROJECT WORKSPACE
 ======================================== */
@@ -7541,5 +7242,88 @@ textarea:focus-visible {
 }
 
 
+/* ==========================================
+   GLOBAL POLISH & DEPLOYMENT-SAFE DEFAULTS
+   ========================================== */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--bg, #080b18);
+  color: var(--text, #f8fafc);
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .section-title {
+    overflow-wrap: anywhere;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .logo-text strong {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
